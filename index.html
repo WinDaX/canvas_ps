@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+      <style>
+         #canvas {
+            border: 1px solid cornflowerblue;
+            position: absolute;
+            left: 200px;
+            top: 10px;
+            background: #eeeeee;
+            border: thin solid #aaaaaa;
+            cursor: pointer;
+            -webkit-box-shadow: rgba(200, 200, 255, 0.9) 5px 5px 10px;
+            -moz-box-shadow: rgba(200, 200, 255, 0.9) 5px 5px 10px;
+            box-shadow: rgba(200, 200, 255, 0.9) 5px 5px 10px;
+         }
+      </style>
+</head>
+
+<body>
+      <select id='processSelect' size='30' >
+         <option value='RGB'>RGB</option>   
+         <option value='nor'>nor</option>   
+         <option value='normal' selected>normal正常模式</option>   
+         <option value='dissolve'>dissolve溶解</option>   
+         <option value='darken'>darken变暗</option>   
+         <option value='multiply'>multiply正片叠底</option>   
+         <option value='colorBurn'>colorBurn颜色加深</option>   
+         <option value='linearBurn'>linearBurn线性加深</option>   
+         <option value='darkerColor'>darkerColor深色</option>   
+         <option value='lighten'>lighten变亮</option>   
+         <option value='screen'>screen滤色</option>   
+         <option value='colorDodge'>colorDodge颜色减淡</option>   
+         <option value='linearDodge'>linearDodge线性减淡</option>   
+         <option value='lighterColor'>lighterColor浅色</option>      
+         <option value='overlay'>overlay叠加</option>      
+         <option value='softLight'>softLight柔光</option>
+         <option value='hardLight'>hardLight强光</option>   
+         <option value='vividLight'>vividLight亮光</option>   
+         <option value='linearLight'>linearLight线性光</option>   
+         <option value='pinLight'>pinLight点光</option>   
+         <option value='hardMix'>hardMix实色混合</option>   
+         <option value='difference'>difference差值</option>   
+         <option value='exclusion'>exclusion排除</option>   
+         <option value='subtract'>subtract减去</option>   
+         <option value='divide'>divide划分</option>   
+      </select> 
+    <div style="clear:both;"></div>  
+    <button value="doProcess" onclick="doProcess();">PROCESS</button>  
+      
+	<div id="canvas">
+	    
+	</div>
+	<script src="js/main.js"></script>
+	<script src="js/processor.js"></script>
+	
+	<script type="text/javascript">
+	    
+	    
+	</script>
+
+</body>
+</html>
